@@ -4,10 +4,11 @@
   "private": true,
   "description": "",
   "author": "",
+  "main": "dist/test.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "postinstall": "npm run -w packages/sub1 -w packages/sub2 build",
+    "build": "vue-cli-service build --target lib index.ts",
+    "postinstall": "npm run build && npm run -w packages/sub1 -w packages/sub2 build ",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },

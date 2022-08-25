@@ -4,6 +4,7 @@
   "private": true,
   "description": "",
   "author": "",
+  "main": "dist/sub2.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib index.ts",
